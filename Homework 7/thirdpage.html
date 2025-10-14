@@ -12,6 +12,21 @@
         font-size: 15px;
         }
         </style>
+
+        <script>
+            function checkboxes()
+            {
+                var firstName = document.getElementById(fName).value;
+                if (firstName == "")
+                {
+                    document.getElementById(fName).style.backgroundColor = "red";
+                    document.getElementById(fName).focus();
+                    var firstName = document.getElementById(fname).required;
+                }
+            }
+
+
+        </script>
     </head>
 
     <body>
@@ -27,7 +42,7 @@
                     <span><input type="radio" name="yes or no" value="yes">yes<br></span>
                     <span><input type="radio" name="yes or no" value="no">no<br></span>
                 </p>
-                <button class="btn btn-primary" id="mySubmit" type="submit">submit</button>
+                <button class="btn btn-primary" id="mySubmit" type="submit" onClick='checkBoxes();'>submit</button>
             </form>
         </p>
         
